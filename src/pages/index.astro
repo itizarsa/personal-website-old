@@ -10,13 +10,13 @@
 		<meta name="title" content="Arshath" />
 		<meta name="description" content="Full Stack Developer Specialized in Javascript" />
 
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/src/styles/style.css" />
 	</head>
 
 	<body>
 		<!-- ***** Header ***** -->
 
-		<header class="header" role="banner" id="top">
+		<header class="header" role="banner" id="top" style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('./assets/header.jpg')">
 			<div class="row">
 				<nav class="nav" role="navigation">
 					<ul class="nav__items">
@@ -178,7 +178,7 @@
 							</div>
 							<div class="work__image-box">
 								<img
-									src="./assets/short.png"
+									src="../assets/short.png"
 									class="work__image"
 									alt="Slug Creator"
 								/>
@@ -197,7 +197,7 @@
 
 				<div class="contact-details">
 					<a class="details">itizarsa@gmail.com</a>
-					<a class="details">+91 9003087478</a>
+					<a class="details">+91 90030 87478</a>
 				</div>
 
 				<ul class="contact__social-links">
@@ -228,14 +228,5 @@
 			</div>
 		</section>
 
-		<script>
-			updateVisitCount()
-
-			function updateVisitCount() {
-				fetch("https://api.countapi.xyz/hit/thisisarsa/portfolio/")
-					.then((res) => res.json())
-					.then((res) => console.log(`Page Visit : ${res.value} times`))
-			}
-		</script>
 	</body>
 </html>
