@@ -2,8 +2,9 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"asset:*": ["src/assets/*?url"],
-			"component:*": ["src/components/*.astro"]
+			"component:*": ["src/components/*.astro"],
+			"layout:*": ["src/layouts/*.astro"],
+			"$": ["src"]
 		}
 	}
 }
